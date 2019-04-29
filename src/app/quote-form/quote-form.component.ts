@@ -10,8 +10,8 @@ export class QuoteFormComponent implements OnInit {
   newQuote = new Quote("","","",0,0, new Date());
     @Output() addQuote = new EventEmitter<Quote>();
     submitQuote(){
-      alert("111111")
-      //this.addQuote.emit(this.newQuote);
+      alert("Quote is being added")
+      this.addQuote.emit(this.newQuote);
     }
     constructor() { }
     ngOnInit() {
