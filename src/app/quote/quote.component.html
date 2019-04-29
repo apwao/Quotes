@@ -11,7 +11,7 @@
       <li>
         {{quote.description}}published:{{quote.publishDate | date}}
       </li>
-      <button (click)='quoteDetails(i)'>Quote Details</button>
+      <button (click)='quoteDetails(i)' class="btn btn-danger">Quote Details</button>
       <app-quote-details *ngIf ="quote.showDescription" [quote] ='quote' (likeQuote)="quoteLike($event, i)" (dislikeQuote)="quotedisLike($event, i)" (removeQuote)="deleteQuote($event, i)"></app-quote-details>
     </div>
   </div>
