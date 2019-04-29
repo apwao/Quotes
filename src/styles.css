@@ -24,8 +24,16 @@ body{
     border-bottom-right-radius: 50px;
 }
 #title{
-    height: 100px;
+    height: 70px;
     font-size: 50px;
     text-align: center;
     color: #800000;
+}
+#details{
+    height: 400px;
+    border-width: 1px;
+    border: solid;
+    border-radius: 5px;
+    border-color: #800000;
+    width: 400px;
 }
