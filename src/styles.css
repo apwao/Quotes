@@ -1,5 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body{
-    background-image: image('/src/assets/images/background.jpg');
+    background-image: url(http://epicwallpaperz.com/wallpaper-hd/ink-pen-wallpapers-high-resolution-On-wallpaper-hd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
