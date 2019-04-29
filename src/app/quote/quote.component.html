@@ -1,0 +1,12 @@
+
+<div class=row>
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
+<div *ngFor ='let quote of quotes; let i = index'>
+  <li>
+    {{quote.description}}published:{{quote.publishDate | date}}
+  </li>
+  <button (click)='quoteDetails(i)'>Quote Details</button>
+  <app-quote-details *ngIf ="quote.showDescription" [quote] ='quote' (likeQuote)="quoteLike($event, i)" (dislikeQuote)="quotedisLike($event, i)" (removeQuote)="deleteQuote($event, i)"></app-quote-details>
+
+</div>
