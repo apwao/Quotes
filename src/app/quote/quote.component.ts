@@ -18,13 +18,13 @@ export class QuoteComponent implements OnInit {
         }
     }
   }
-  quoteLike(likeQuote, index){
+  likeQuote(likeQuote, index){
         if (likeQuote){
           this.quotes[index].like +=1;
         }
     }
 
-    quoteDislike(dislikeQuote, index){
+    dislikeQuote(dislikeQuote, index){
       if (dislikeQuote){
         this.quotes[index].dislike +=1;
       }
