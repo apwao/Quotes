@@ -8,7 +8,7 @@ This is an application that allows the user to save a quote, view the quote, del
 * Use 'git clone' command to Clone and then unzip the repository from github, https://github.com/apwao/Quotes.git
 * Run ng serve from your terminal
 ## BDD
-![](src/app/images/selection_016.png)
+![](src/app/assets/images/selection_016.png)
 
 ## Known Bugs
 * Upvote and Downvote buttons not functional
