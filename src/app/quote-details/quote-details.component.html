@@ -1,17 +1,15 @@
 <p>{{quote.description}}</p>
-<div class="row" id="details">
-    <div class=col-md-2>
-       <button class="btn btn-success" (click)=Like(quote) >Like</button> 
-      <!-- <button  class="btn btn-success" (click)=likeQuote(quote)>likeQuote {{quote.likeQuote}}</button> -->
+<p>This quote was posted {{quote.publishDate | dateCount}} days ago</p> <div class="row" id="view-details">
+   <div class=col-md-2>
+       <button class="btn btn-success" (click)=Like(quote)>Upvote {{quote.Like}}</button> 
     </div>
     <div class="col-md-1"></div>
     <div class="col-md-2">
-      <button  (click)=Dislike(quote) class="btn btn-warning">dislike</button> 
-      <!-- <button  (click)="dislikeQuote(true)" class="btn btn-warning">dislike</button> -->
-    </div>
+      <button  (click)=Dislike(quote) class="btn btn-warning">Downvote {{quote.Dislike}}</button> 
+    </div> -->
     <div class="col-md-1"></div>
     <div class="col-md-2">
-     <button  (click)=Delete(quote) class="btn btn-danger">delete</button> 
-      <!-- <button  (click)="dislikeQuote(true)" class="btn btn-danger">delete</button> -->
+     <button (click) = 'quoteDelete(true)' class="btn btn-danger">Delete Quote</button>
     </div>
-</div>
+</div> 
+
