@@ -4,16 +4,17 @@
         <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
             <div class="form-group" id="fields">
  
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name"  #name='ngModel' required>
-                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                        <p class="alert-link"> Name is Required</p>
+                <label for="name">Submitter</label>
+                <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.submitter"  submitter = "name" #submitter='ngModel' required>
+
+                <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
+                        <p class="alert-link"> Submitter is Required</p>
                 </div>
             </div>
             <div class="form-group">
  
-                <label for="">Description</label>
-                <textarea class="form-control" name="description" rows="5" [(ngModel)]="newQuote.description" #description='ngModel' required>
+                <label for="description">Quote</label>
+                <textarea class="form-control" id="description" rows="5" [(ngModel)]="newQuote.description" name="description" #description='ngModel' required>
                 </textarea>
                 <div [hidden]='description.valid || description.pristine' class="alert alert-danger">
                     <p>Description required</p>
@@ -22,7 +23,7 @@
             <div class="form-group">
                 <label for="author">Author</label>
                     <input type='text' id="author" required class="form-control" [(ngModel)]="newQuote.author" name="author" #author="ngModel">
-            <div [hidden]='description.valid || description.pristine' class="alert alert-danger">
+            <div [hidden]='author.valid || author.pristine' class="alert alert-danger">
                 <p>Author required</p>
             </div>
             </div>
@@ -34,7 +35,18 @@
                 </div>
             </div>
             <br>
-            <button class="btn btn-danger" type="Submit"  name="button">Submit</button>
+            <ul>
+                <li>
+                    <button class="btn btn-success" type="Submit"  name="button"  >Add Quote</button>
+                </li>
+                <br>
+                <li>
+                 <button type="reset" (click)="revert()" class="btn btn-success">Reset</button>
+                </li>
+            </ul>
+            
+            
+            
         </form>
       </div>
     </div>
