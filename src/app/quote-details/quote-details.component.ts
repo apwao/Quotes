@@ -12,13 +12,13 @@ export class QuoteDetailsComponent implements OnInit {
      this.isComplete.emit(complete);
    }
   
- Dislike(quote:Quote){
-        quote.dislike +=1
-   }
+//  dislike(quote:Quote){
+//         quote.dislike +=1
+//    }
  
-  Like(quote:Quote){
-     quote.like += 1
-    }
+//   like(quote:Quote){
+//      quote.like += 1
+//     }
   constructor() { }
   ngOnInit() {
   }
